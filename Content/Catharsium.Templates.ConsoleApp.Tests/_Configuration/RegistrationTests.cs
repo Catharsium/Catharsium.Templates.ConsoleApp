@@ -7,7 +7,7 @@ using NSubstitute;
 namespace Catharsium.Templates.ConsoleApp.Tests._Configuration
 {
     [TestClass]
-    public class CatharsiumProjectClassNameRegistrationTests
+    public class RegistrationTests
     {
         [TestMethod]
         public void AddProject_RegistersDependencies()
