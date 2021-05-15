@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Thierry Brachthuizer",
+  "classifications": [ "Common/Console" ],
+  "name": "Catharsium.Templates.ConsoleApp",
+  "defaultName": "Catharsium.Templates.ConsoleApp",
+  "identity": "Catharsium.Templates.ConsoleApp.v1",
+  "shortName": "catharsiumconsole",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "Catharsium.Templates.ConsoleApp",
+  "preferNameDirectory": true,
+  "symbols": {
+    "ProjectClassName": {
+      "type": "derived",
+      "valueSource": "name",
+      "valueTransform": "classNameForm",
+      "description": "Dependency name",
+      "defaultValue": "",
+      "replaces": "CatharsiumProjectClassName"
+    }
+  },
+  "forms": {
+    "classNameForm": {
+      "identifier": "replace",
+      "pattern": "^(Catharsium|\\.)",
+      "replacement": ""
+    }
+  }
+}
